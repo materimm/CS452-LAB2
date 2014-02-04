@@ -1,4 +1,4 @@
-#include "initShaders.h"
+#include "initShader.h"
 using namespace std;
 int counter=0;//counter to increase how many vertices are going to be drawn at a given time
 
@@ -32,7 +32,7 @@ void init(){
   { GL_NONE , NULL} 
   };
 
-  initShaders(shaders);
+  initShader(shaders);
   
   glGenVertexArrays(1, &vaoID);
   glBindVertexArray(vaoID);
