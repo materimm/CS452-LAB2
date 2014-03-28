@@ -1,0 +1,14 @@
+Maurice Materise
+Shader Process
+
+The process of the shader program: 
+
+First the shader file is passed into the loadShader function. 
+This function opens the file and gets the length of the file. It then
+makes a buffer based on the file size. It stores the file into this
+buffer. The buffer is then returned. Next the createShader function
+is passed the buffer and the type. It then compiles and creates the
+shader. Next the createProgram function takes a list of all the 
+created shaders. It then creates a program and then takes each 
+shader from the list and links the shader to the program. The 
+program is then created and used. 
